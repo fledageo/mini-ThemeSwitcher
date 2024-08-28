@@ -1,20 +1,22 @@
 import React from 'react'
 import "./styles.css"
-export const Block = ({props}) => {
-  const [theme,setTheme] = props.themState
+export const Block = (props) => {
+  const [theme, setTheme] = props.themeState
   const handleChangeTheme = () => {
-    if(theme == "dark"){
-        
+    if (theme == "dark") {
+      setTheme("light")
+    }else{
+      setTheme("dark")
     }
   }
 
   return (
     <div className='block'>
       <span>Hello Friend</span>
-        <span>
-          You can change the Theme
-          <button onClick={handleChangeTheme}>Theme</button>
-        </span>
+      <span>
+        You can change the Theme
+      </span>
+      <button onClick={handleChangeTheme} className='changeBtn'>Change Theme</button>
     </div>
   )
 }

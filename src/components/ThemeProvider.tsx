@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-export const ThemeProvider = ({ props }) => {
+export const ThemeProvider = ( props ) => {
     const [theme, setTheme] = useState("light")
 
     useEffect(() => {

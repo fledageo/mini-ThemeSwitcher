@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <div className="container">
-        <ThemeProvider render={(themState) => {
+        <ThemeProvider render={(themeState) => {
           return <>
-            <Block themState={themState}/>
+            <Block themeState={themeState}/>
           </>
         }}>
         </ThemeProvider>
