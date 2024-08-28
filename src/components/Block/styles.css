@@ -1,0 +1,12 @@
+.block{
+    width: 400px;
+    height: 400px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--block-background-color);
+    color: var(--block-text-color);
+    font-size: 30px;
+}

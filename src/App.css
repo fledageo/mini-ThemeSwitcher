@@ -1,0 +1,13 @@
+body{
+  --block-background-color: #ECDFCC;
+  --block-text-color:#697565;
+}
+body.dark{
+  --block-background-color: #3C3D37;
+  --block-text-color:#ECDFCC;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
